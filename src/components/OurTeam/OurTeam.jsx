@@ -75,8 +75,8 @@ function OurTeam() {
   return (
     <Box
       sx={{
-        height: "957px",
-        display: "flex",
+        minHeight: "957px",
+    
       }}
     >
       <Container>

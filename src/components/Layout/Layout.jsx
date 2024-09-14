@@ -15,7 +15,7 @@ function Layout() {
         sx={{
           backgroundImage: `url(${bg})`,
           backgroundSize: "cover",
-          height: "991px",
+          minHeight: "957px",
         }}
       >
         <Navbar />

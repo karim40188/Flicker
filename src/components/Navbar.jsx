@@ -8,7 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import logo from "../assets/download.png";
+import logo from "../assets/logoImg.png";
 import { useState } from "react";
 
 const pages = [
@@ -35,7 +35,7 @@ function Navbar() {
  
 
   return (
-    <AppBar position="static" sx={{ backgroundColor:'transparent'}} elevation={0}>
+    <AppBar position="static" sx={{ backgroundColor:'transparent'}} elevation={0} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -51,12 +51,13 @@ function Navbar() {
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
+              
        
             }}
           >
-            <Box sx={{width:'147px',height:"125px" , backgrounColor:'red'}}>
+            <Box sx={{width:'147px',height:"125px"}}>
 
-            <Box component='img' sx={{width:'100%',height:"100%",backgroundSize:'cover'}} src={logo} alt="" />
+            <Box component='img' sx={{width:'100%',height:"auto",backgroundSize:'cover'}} src={logo} alt="" />
             </Box>
           </Typography>
 
@@ -108,6 +109,7 @@ function Navbar() {
               letterSpacing: ".3rem",
               color: "inherit",
               textDecoration: "none",
+              
             }}
           >
             LOGO
@@ -117,7 +119,8 @@ function Navbar() {
               <Button
                 key={page.title}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "white", display: "block",textTransform:'capitalize' }}
+                
               >
                 {page.title}
               </Button>

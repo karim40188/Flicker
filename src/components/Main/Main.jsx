@@ -8,8 +8,17 @@ function Main() {
           textAlign: "center",
           color: "#fff",
           position: "absolute",
-          top: "203px",
-          left: "347px",
+          widt:'754.8px',
+          height:'436.39px',
+          top:'203px',
+          left:'50%',
+          transform:'translateX(-50%)'
+          
+          
+
+          
+          
+          
         }}
       >
         <Typography
